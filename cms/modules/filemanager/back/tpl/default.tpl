@@ -8,4 +8,4 @@
     });
 </script>
 
-<div id="elfinder"></div>
+<div id="elfinder" style="height:auto !important;"></div>
