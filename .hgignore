@@ -1,0 +1,6 @@
+syntax: glob
+cms/side/back/tpl/compiled/*
+cms/side/front/tpl/compiled/*
+cms/tmp/*
+data/*
+cms/config/config.ini

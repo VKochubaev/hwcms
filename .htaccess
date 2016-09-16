@@ -1,0 +1,23 @@
+php_flag magic_quotes_gpc Off
+php_flag magic_quotes_runtime Off
+php_flag magic_quotes_sybase Off
+
+AddDefaultCharset utf-8
+IndexIgnore *
+Options -Indexes
+Options +FollowSymlinks
+
+<Files ~ "\.(tpl|ini|ser|log|htt.+|_hd)$">
+	deny from all
+</Files>
+
+<Files ~ "^error\.txt">
+	deny from all
+</Files>
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php

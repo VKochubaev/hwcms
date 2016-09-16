@@ -1,0 +1,17 @@
+# nginx configuration требует проверки
+charset utf-8;
+autoindex off;
+location / {
+	if ($request_filename ~ sitemap.xml){
+		rewrite ^/(.*) /sitemap.php;
+	}
+	if (!-e $request_filename){
+		rewrite ^/(.*) /index.php;
+	}
+}
+location ~ \.(tpl|ini|ser|htt.+|_hd)$ {
+	deny all;
+}
+location ~ ^error\.txt {
+	deny all;
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body { font-size:14px !important;}
+.ImageLeft {
+	float:left;
+	margin:10px 20px 10px 0;
+}
+.ImageRight {
+	float:right;
+	margin:10px 0 10px 20px;
+	
+}

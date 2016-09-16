@@ -1,0 +1,421 @@
+#mod_menu {
+	width: 200px;
+	position: absolute;
+	right:0;
+	top: 100px;
+	z-index: 99;
+}
+#mod_menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#mod_menu ul li {
+	display: block;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	height: 25px;
+	line-height: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+form .field {
+	position: relative;
+}
+form .field label {
+	display: inline-block;
+	width: 250px
+}
+form fieldset .field {
+	
+}
+form fieldset .field label {
+	display: inline-block;
+	width: 240px
+}
+
+.ord-field {
+    display: inline-block;
+    height: inherit;
+    width: 2em;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    background-color: transparent;
+    
+}
+
+
+
+/* Таблицы */
+
+.greed {
+     display: table;
+    width: 100%;
+    border: 1px solid #bbb;
+
+}
+.greed thead th {
+    text-align: center !important;
+    padding: 5px;
+    border-bottom: 2px solid #bbb;
+    background-color: #e8e8e8;
+}
+
+.greed td, .greed th {
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.greed tr.row:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+.greed tr.row:nth-child(odd) td {
+    background-color: #f5f5f5;
+}
+
+.greed tr.row:nth-child(even):hover td {
+    background-color: #d0f9d2;
+}
+.greed tr.row:nth-child(odd):hover td {
+    background-color: #c6f2c7;
+}
+
+.greed.tiny{
+    border-collapse: collapse;
+    padding: 0;
+    border-width: 1px;
+}
+.greed.nowrap th, .greed .nowrap {
+    white-space: nowrap;
+}
+.greed .colCBox {
+    width: 1em;
+    text-align: center;
+}
+.greed .colId {
+    width: 5em;
+    text-align: center;
+}
+.greed .colTitle {
+    width: auto;
+    text-align: left;
+    padding-left: 10px;
+}
+.greed .colSmall {
+    width: 1em;
+    text-align: center;
+}
+.greed .col16 {
+    width: 16px;
+    padding: 0;
+    text-align: center;
+}
+.greed .col16.colCps {
+    border-right: 0 none !important;
+}
+.greed .colTitle.colCps {
+    border-left: 0 none !important;
+}
+.greed .mess-no-entries{
+    padding: 50px;
+    text-align: center;
+    font-size: 120%;
+}
+
+
+
+/* Деревья */
+.treeCps {
+ 
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-image: url(/cms/side/back/images/tree-collapse.gif);
+    background-position: -48px 0;
+    background-repeat: no-repeat;
+    
+}
+.treeCps.p {
+    background-position: 0px 0;
+}
+.treeCps.m {
+    background-position: -16px 0;
+}
+.treeCps.r {
+    background-position: -32px 0;
+}
+.treeCps.e {
+    background-position: -48px 0;
+}
+
+
+/* Группа иконок */
+ul.action-icons {
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.action-icons a {
+text-decoration: none;   
+}
+ul.action-icons ul {
+    margin: 0;
+    text-align: left;
+}
+ul.action-icons li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стандартные иконки на 16 */
+.ico16 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    
+    background-image: url(/cms/side/back/images/ico16-std.png);
+    background-repeat: no-repeat;
+    background-position: 16px 0;
+}
+.ico-notext span {
+    display: none;
+}
+/* Добавление */
+.ico16.add {
+   background-position: -16px 0;
+}
+.ico16.add:hover {
+    background-position: -16px -16px;
+}
+/* Редактирование */
+.ico16.edit {
+   background-position: 0px 0;
+}
+.ico16.edit:hover {
+   background-position: 0px -16px;
+}
+/* Удаление */
+.ico16.del {
+   background-position: -32px 0;
+}
+.ico16.del:hover {
+   background-position: -32px -16px;
+}
+/* Активность 1 */
+.ico16.act-1 {
+   background-position: -80px 0;
+}
+.ico16.act-1:hover {
+   background-position: -80px -16px;
+}
+/* Активность 2 */
+.ico16.act-2 {
+   background-position: -96px 0;
+}
+.ico16.act-2:hover {
+   background-position: -96px -16px;
+}
+/* Активность 0 */
+.ico16.act-0 {
+   background-position: -112px 0;
+}
+.ico16.act-0:hover {
+   background-position: -112px -16px;
+}
+/* Видимость 1 */
+.ico16.vis-1 {
+   background-position: -48px 0;
+}
+.ico16.vis-1:hover {
+   background-position: -48px -16px;
+}
+/* Видимость 0 */
+.ico16.vis-0 {
+   background-position: -64px 0;
+}
+.ico16.vis-0:hover {
+   background-position: -64px -16px;
+}
+/* Галка 1 */
+.ico16.mark-1 {
+   background-position: -128px 0;
+}
+.ico16.mark-1:hover {
+   background-position: -128px -16px;
+}
+.ico16.mark-1.disabled {
+   background-position: -128px -32px;
+}
+/* Галка 0 */
+.ico16.mark-0 {
+   background-position: -144px 0;
+}
+.ico16.mark-0:hover {
+   background-position: -144px -16px;
+}
+.ico16.mark-0.disabled {
+   background-position: -144px -32px;
+}
+/* Сортер */
+.ico16.sorter {
+   background-position: -160px 0;
+}
+.ico16.sorter:hover {
+   background-position: -160px -16px;
+}
+.ico16.sorter.disabled {
+   background-position: -160px -32px;
+}
+/* Сорт 0 */
+.ico16.sort-0 {
+   background-position: -176px 0;
+}
+.ico16.sort-0:hover {
+   background-position: -176px -16px;
+}
+.ico16.sort-0.disabled {
+   background-position: -176px -32px;
+}
+/* Сорт 1 */
+.ico16.sort-1 {
+   background-position: -192px 0;
+}
+.ico16.sort-1:hover {
+   background-position: -192px -16px;
+}
+.ico16.sort-1.disabled {
+   background-position: -192px -32px;
+}
+
+
+/* Хэлпер динамическая панель */
+.dyn-panel {
+    display: none;
+    position: absolute;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+    z-index: 11000;
+}
+ul.dyn-panel {
+    list-style: none;
+}
+ul.dyn-panel li {
+    text-align: left;
+    white-space: nowrap;
+}
+ul.dyn-panel li i {
+    margin-right: 5px;
+}
+.dyn-panel.show {
+    display: block;
+}
+
+/* Хэлпер выбор узла дерева */
+.branch-sel ul.tree-list {
+	display: none;
+    position: absolute;
+    padding: 1em;
+    z-index: 100;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.branch-sel ul.tree-list .tree-list-label {
+	display: inline-block;
+	background-color: #ccc;
+}
+.branch-sel ul.tree-list ul {
+	margin-left: 2em;
+    padding: 0 0 .5em 0;
+    list-style: none;
+}
+.branch-sel ul.tree-list a.lock {
+    opacity: .4;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Сообщения */
+#messages {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(243, 243, 243, 0.9);
+    border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+ul.incontent-mess {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+    list-style: none;
+}
+#messages ul {
+    display: none;
+    overflow: auto;
+    max-height: 14em;
+    padding: 10px 10px 5px 10px;
+    margin: 0;
+    list-style: none;
+}
+#messages ul li,
+ul.incontent-mess li{
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#messages .mess-btn{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 8px;
+	background-color: #9a9a9a;
+}
+#messages ul li.m,
+ul.incontent-mess li.m {
+    background-color: rgba(248, 225, 180, 0.8);
+    border: 1px solid #efb850;
+}
+#messages.m .mess-btn {
+    background-color: rgba(239, 184, 80, 0.8);
+}
+#messages ul li.e,
+ul.incontent-mess li.e {
+    background-color: rgba(248, 180, 180, 0.8);
+    border: 1px solid #ef5050;
+}
+#messages.e .mess-btn {
+    background-color: #ef5050;
+}
+#messages ul li.s,
+ul.incontent-mess li.s{
+    background-color: #c9f8b4;
+    border: 1px solid #81ef50;
+}
+#messages.s .mess-btn {
+    background-color: #81ef50;
+}
